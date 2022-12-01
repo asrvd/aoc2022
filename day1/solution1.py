@@ -6,10 +6,10 @@ How many total Calories is that Elf carrying?
 from functools import reduce
 
 input_array = open("input.txt", "r").read().split("\n\n")
-elves_with_calories = []
+elves_with_calories = list(
+    map(lambda x: map(lambda x: int(x), x.split("\n")), input_array)
+)
 
-for i in range(0, len(input_array)):
-    elves_with_calories.append(map(lambda x: int(x), input_array[i].split("\n")))
 
 highest_sum = 0
 
