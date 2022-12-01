@@ -1,0 +1,1 @@
+aoc 2022 solutions using python ~ in case i'm able to solve them
