@@ -28,7 +28,7 @@ for move in moves:
     to_stack = int(move[5])
     amount = int(move[1])
 
-    stacks[to_stack - 1] = stacks[to_stack - 1] + stacks[from_stack - 1][-amount:] # don't reverse the list
+    stacks[to_stack - 1] = stacks[to_stack - 1] + stacks[from_stack - 1][-amount:] # don't reverse the list here
     stacks[from_stack - 1] = stacks[from_stack - 1][:-amount]
 
 print("".join(["" + stack.pop() for stack in stacks]))
