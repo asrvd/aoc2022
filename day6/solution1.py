@@ -5,8 +5,7 @@ marker = 4 # initial position of marker should be minimum 4
 while True:
     four_chars = input[:4]
 
-    if len(set(four_chars)) == len(four_chars):
-        print("Found it!")
+    if len(set(four_chars)) == len(four_chars): # check for unique characters
         break
 
     marker += 1
