@@ -1,5 +1,4 @@
 signals = list(map(lambda x: x.split(" "), open("input.txt").read().split("\n")))
-CRT = "*" * 40
 x = 1
 cycle_and_x = [] # to map every cycle wit its respective value of x
 cycle_count = 0
